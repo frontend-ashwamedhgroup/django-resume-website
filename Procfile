@@ -1,2 +1,2 @@
 web: gunicorn resume.wsgi --log-file -
-web: python manage.py migrate && gunicorn OURNAME.wsg
+web: python manage.py migrate && gunicorn resume.wsg
