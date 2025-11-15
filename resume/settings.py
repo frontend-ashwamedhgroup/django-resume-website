@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%@0ni2f&zz%&eh_tvcsec!j6==p9-7_--2+f&wa$b(x1hw##lf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -123,7 +123,7 @@ STATICFILES_DIRS = ['static/']
 
 #push site online
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFileStorage'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR/'staticfiles'
 
 
 # Default primary key field type
